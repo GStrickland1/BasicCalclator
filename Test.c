@@ -1,8 +1,11 @@
-/* Program to create basic calculator */
+// Program to create basic calculator
 #include <stdio.h>
 
+// Function Declarations
+
+// Main Function
 int main()
-{	/* Declare Variables */
+{	
 	char Operator;
 	float num1, num2, result = 0;
 
