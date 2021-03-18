@@ -1,45 +1,56 @@
-// Program to create basic calculator
 #include <stdio.h>
 
-// Function Declarations
+// Function declarations
+int add (int n1, int n2);
+int subtract (int n1, int n2);
+int multiply (int n1, int n2);
+int divide (int n1, int n2);
 
-// Main Function
+// Main function
 int main()
-{	
-	char Operator;
-	float num1, num2, result = 0;
+{
+	int num1, num2;
 
-	printf("\n Please Enter an Operator (+, -, *, /) : ");
-	scanf_s("%c", &Operator);
+	printf("Enter two numbers: ");
+	scanf_s("%d %d", &num1, &num2);
 
-	printf("\n Please Enter the Values for two Operands: num1 and num2 : ");
-	scanf_s("%f%f", &num1, &num2);
-
-	if (Operator == '+') /* Addition operation */
-	{
-		/* Display Results */
-		printf("\n The result of %.2f + %.2f = %.2f", num1, num2, num1 + num2);
-	}
-	else if (Operator == '-') /* Subtraction */
-	{
-		/* Display Results */
-		printf("\n The result of %.2f - %.2f = %.2f", num1, num2, num1 - num2);
-	}
-	else if (Operator == '*') /* Multiplication */
-	{
-		/* Display Results */
-		printf("\n The result of %.2f * %.2f = %.2f", num1, num2, num1 * num2);
-	}
-	else if (Operator == '/') /* Division */
-	{
-		/* Display Results */
-		printf("\n The result of %.2f / %.2f = %.2f", num1, num2, num1 / num2);
-	}
-	else
-	{
-		/* Display Results */
-		printf("\n You have entered an Invalid Operator ");
-	}
+	printf("%d + %d = %d\n", num1, num2, add(num1, num2));
+	printf("%d - %d = %d\n", num1, num2, subtract(num1, num2));
+	printf("%d * %d = %d\n", num1, num2, multiply(num1, num2));
+	printf("%d / %d = %d\n", num1, num2, divide(num1, num2));
 
 	return 0;
 }
+
+// Function to add two integer numbers
+int add(int n1, int n2)
+{
+	int result;
+	result = n1 + n2;
+	return result;
+}
+
+// Function to subtract two integer numbers
+int subtract(int n1, int n2)
+{
+	int result;
+	result = n1 - n2;
+	return result;
+}
+
+// Function to multiply two integer numbers
+int multiply(int n1, int n2)
+{
+	int result;
+	result = n1 * n2;
+	return result;
+}
+
+// Function to divide two integer numbers
+int divide(int n1, int n2)
+{
+	int result;
+	result = n1 / n2;
+	return result;
+}
+
