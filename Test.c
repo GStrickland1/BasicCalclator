@@ -3,11 +3,11 @@
 
 // Union
 union Calc {
-	int add; int num1; int num2;
-	int subtract; int num1; int num2;
-	int multiply; int num1; int num2;
-	int divide; int num1; int num2;
-};
+	int add; int num1;
+	int subtract;
+	int multiply;
+	int divide;
+}; int num1; int num2;
 
 // Main Function
 int main()
