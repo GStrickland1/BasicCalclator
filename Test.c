@@ -12,16 +12,7 @@ union Calc {
 
 // Main Function
 int main()
-{
-	FILE * fpr; //File I/O 
-		fpr = fopen_s("data.txt", "r");
-		if (fpr == NULL)
-		{
-			puts("Error while opening file");
-			exit();
-		}
-		fclose(fpr);
-	
+{	
 	char Operator;
 	unsigned int num1, num2, result = 0;
 
